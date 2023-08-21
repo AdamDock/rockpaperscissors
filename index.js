@@ -18,13 +18,14 @@ function getComputerChoice() {
     return choice;
 }
 function getUserChoice(){
-    
+    let user = prompt("Choose rock, paper, or scissors")
+    return user;
 }
 
 
 function playRockPaperScissors(){
     let computer = getComputerChoice();
-    let user = getComputerChoice();
+    let user = getUserChoice();
     if(user===computer)
         return "It is a tie";
     else if(computer==="rock"){
@@ -73,4 +74,4 @@ game();
     -Need to add counter to display score of wins and losses. Should be able to use PLSRD principle for this
     -Need to add HTML application
     --need to prompt user for selection and make it not case sensitive
-    - 
+    - */
